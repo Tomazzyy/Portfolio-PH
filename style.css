@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #d4d4d4; /* neutral-300 */
+    cursor: default;
+    overflow-x: hidden;
+}
+
+/* Custom Grid Pattern */
+.grid-bg {
+    background-image:
+        linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse at center, black 40%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 70%);
+}
+
+/* Beam Animation CSS with logo blue (#0049b1) */
+.beam-border-v {
+    position: absolute; top: 0; bottom: 0; left: 0; width: 1px;
+    background: rgba(255,255,255,0.05); overflow: hidden; z-index: 10;
+}
+.beam-border-v::after {
+    content: ''; position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(to bottom, transparent, #0049b1, transparent);
+    transform: translateY(-100%);
+    animation: beam-drop 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    opacity: 0.7;
+}
+.beam-border-h {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+    background: rgba(255,255,255,0.05); overflow: hidden; z-index: 10;
+}
+.beam-border-h::after {
+    content: ''; position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(to right, transparent, #0049b1, transparent);
+    transform: translateX(-100%);
+    animation: beam-slide 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation-delay: 2.5s;
+    opacity: 0.7;
+}
+
+@keyframes beam-drop {
+    0% { transform: translateY(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100%); opacity: 0; }
+}
+@keyframes beam-slide {
+    0% { transform: translateX(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Bulletproof Scroll Animation System */
+.animate-on-scroll {
+    /* Fully visible and aligned by default (no JS fallback) */
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform, filter;
+}
+
+/* If JS is active, hide items initially so they can animate in */
+.js-active .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(35px);
+    filter: blur(8px);
+}
+
+/* Make them visible when in-view / animated class is appended */
+.js-active .animate-on-scroll.animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    filter: blur(0px) !important;
+}
+
+/* Card Hover & Floating Card with Blue Glow */
+.floating-card {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), z-index 0s, border-color 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+.floating-card:hover {
+    transform: scale(1.05) translateY(-10px) !important;
+    z-index: 50;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 73, 177, 0.4) !important;
+}
+
+/* Button Animations with logo blue (#0049b1) */
+.btn-wrapper:hover .btn {
+    background-color: #0049b1;
+    color: #fff;
+    border-color: #0049b1;
+}
+.btn {
+    transition: all 0.3s ease;
+}
+
+/* Custom Scrollbar in logo blue */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+::-webkit-scrollbar-thumb {
+    background: #0049b1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #003683;
+}
+
+/* Video Hover in Folder Modal */
+video {
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.portfolio-item:hover video {
+    transform: scale(1.05);
+}
+
+/* Video Overlays with logo blue Hover Tint */
+.video-overlay {
+    transition: all 0.4s ease;
+}
+.portfolio-item:hover .video-overlay {
+    background: rgba(0, 73, 177, 0.25);
+}
+
+/* Custom Cursor */
+#custom-cursor {
+    transition: transform 0.1s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
+}

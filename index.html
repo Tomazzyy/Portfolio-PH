@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Henrique | Filmmaker & Social Media</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify Script -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    
+    <script>
+        document.documentElement.classList.add('js-active');
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        phBlue: '#0049b1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#050505] text-neutral-300 min-h-screen flex flex-col overflow-x-hidden selection:bg-[#0049b1] selection:text-white">
+
+    <!-- Cursor Personalizado Azul -->
+    <div id="custom-cursor" class="hidden md:block fixed w-8 h-8 border-2 border-[#0049b1] rounded-full pointer-events-none z-[9999] transition-transform duration-100 ease-out"></div>
+
+    <!-- Navegação Estilo Canvas -->
+    <nav class="fixed top-0 left-0 w-full z-[100] bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="MINHA LOGO.png" alt="Pedro Henrique" class="h-10 md:h-12 w-auto">
+            <span class="hidden md:block text-xs font-mono font-semibold tracking-widest text-neutral-500">ESTRATEGISTA AUDIOVISUAL & FILMMAKER</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-xs font-mono uppercase tracking-widest text-neutral-400">
+            <a href="#portfolio" class="hover:text-[#0049b1] transition-colors">Portfólio</a>
+            <a href="#sobre" class="hover:text-[#0049b1] transition-colors">Sobre</a>
+        </div>
+        
+        <!-- Botão Brutalista do Design System -->
+        <a class="btn-wrapper group relative inline-flex justify-center items-center p-3 border border-neutral-800 hover:border-[#0049b1] transition-colors duration-300" href="https://wa.me/53991291699">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMCwgNzMsIDE3NywgMC4yKSIvPjwvc3ZnPg==')] transition-opacity duration-300"></div>
+            <!-- Corner accents -->
+            <div class="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0"></div>
+            <div class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0"></div>
+            <span class="btn flex items-center gap-2 bg-transparent text-white font-medium uppercase tracking-wider text-[10px] relative z-10">
+                Falar com Pedro
+                <svg aria-hidden="true" class="iconify text-sm" data-icon="solar:arrow-right-up-bold-duotone" height="1em" role="img" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M17.47 15.53a.75.75 0 0 0 1.28-.53V6a.75.75 0 0 0-.75-.75H9a.75.75 0 0 0-.53 1.28z" fill="currentColor" fill-rule="evenodd"></path><path d="M5.47 17.47a.75.75 0 1 0 1.06 1.06l6.97-6.97l-1.06-1.06z" fill="currentColor" opacity=".5"></path></svg>
+            </span>
+        </a>
+    </nav>
+
+    <!-- Hero Section Split 3D (Design System Clone adaptado) -->
+    <section class="min-h-screen flex items-center justify-center px-6 lg:px-16 relative pt-32 pb-16 overflow-hidden">
+        <!-- Background Grid quadriculado com Máscara Radial -->
+        <div class="absolute inset-0 grid-bg pointer-events-none z-0"></div>
+        
+        <!-- Luz de fundo difusa azul elétrico -->
+        <div class="absolute w-[500px] h-[500px] bg-[#0049b1]/10 rounded-full blur-3xl -z-10 top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <!-- Left Column: Copywriting de Alto Impacto -->
+            <div class="lg:col-span-6 flex flex-col justify-center items-start text-left z-20">
+                <h2 class="text-[#0049b1] font-mono text-xs mb-5 tracking-[0.3em] uppercase animate-on-scroll animate" style="transition-delay: 100ms;">
+                    Captação & Edição Profissional
+                </h2>
+                <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-black mb-6 uppercase leading-[0.95] tracking-tighter text-white animate-on-scroll animate" style="transition-delay: 300ms;">
+                    PARE E <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0049b1] to-white italic">ESCUTE.</span>
+                </h1>
+                <p class="max-w-xl text-neutral-400 text-base md:text-lg mb-10 leading-relaxed font-light animate-on-scroll animate" style="transition-delay: 500ms;">
+                    Transformo segundos de atenção em autoridade digital. Especialista em captação e edição dinâmica para quem busca o próximo nível.
+                </p>
+                <div class="flex flex-wrap gap-4 items-center animate-on-scroll animate" style="transition-delay: 700ms;">
+                    <!-- CTA Primário: Brutalista Azul -->
+                    <a class="btn-wrapper group relative inline-flex justify-center items-center p-4 border border-neutral-800 hover:border-[#0049b1] transition-colors duration-300" href="https://wa.me/53991291699">
+                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMCwgNzMsIDE3NywgMC4yKSIvPjwvc3ZnPg==')] transition-opacity duration-300"></div>
+                        <div class="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0"></div>
+                        <div class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0"></div>
+                        <span class="btn flex items-center gap-3 bg-transparent text-white font-medium uppercase tracking-wider text-xs relative z-10">
+                            Conversar no WhatsApp
+                            <svg aria-hidden="true" class="iconify text-base" data-icon="solar:arrow-right-up-bold-duotone" height="1em" role="img" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M17.47 15.53a.75.75 0 0 0 1.28-.53V6a.75.75 0 0 0-.75-.75H9a.75.75 0 0 0-.53 1.28z" fill="currentColor" fill-rule="evenodd"></path><path d="M5.47 17.47a.75.75 0 1 0 1.06 1.06l6.97-6.97l-1.06-1.06z" fill="currentColor" opacity=".5"></path></svg>
+                        </span>
+                    </a>
+                    
+                    <!-- CTA Secundário: Shimmer Sutil de Galeria -->
+                    <a class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-none bg-transparent pt-3.5 pr-6 pb-3.5 pl-6 text-xs font-semibold text-white transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,73,177,0.4)] border border-white/5" href="#portfolio" style="--spread: 90deg; --shimmer-color: #0049b1; --speed: 4s; --cut: 1px;">
+                        <div class="absolute inset-0 -z-20 overflow-hidden">
+                            <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_4s_linear_infinite]" style="animation: spin 4s linear infinite;">
+                                <div class="absolute inset-0" style="background: conic-gradient(from calc(270deg - (var(--spread) * 0.5)), transparent 0, var(--shimmer-color) var(--spread), transparent var(--spread));"></div>
+                            </div>
+                        </div>
+                        <div class="absolute inset-[1px] -z-10 bg-[#050505] transition-colors duration-300 group-hover:bg-[#0A0A0A]"></div>
+                        VER PORTFÓLIO
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Column: 3D Overlapping Floating Cards Stack -->
+            <div class="lg:col-span-6 relative h-[450px] md:h-[550px] lg:h-auto flex items-center justify-center perspective-[1200px] animate-on-scroll animate" style="transition-delay: 600ms;">
+                <!-- Card 1: Central (Nilmar Cover) -->
+                <div class="relative z-10 w-56 md:w-64 aspect-[4/5] bg-[#0A0A0A] border border-white/10 rounded-2xl shadow-2xl floating-card transform rotate-[-2deg] overflow-hidden cursor-pointer" onclick="openFolder('nilmar')">
+                    <img src="assets/thumb/nilmar_capa.jpg" alt="Nilmar Eletrônicos Cover" class="w-full h-full object-cover opacity-80 hover:scale-105 transition-all duration-500">
+                    <div class="absolute bottom-4 left-4 bg-black/75 backdrop-blur-sm px-3 py-1 border border-white/10 rounded">
+                        <span class="text-[10px] font-mono uppercase text-white tracking-widest">Case 01 • Nilmar</span>
+                    </div>
+                </div>
+                <!-- Card 2: Superior Esquerdo (Conecta Cover) -->
+                <div class="absolute top-[10%] left-[5%] md:left-[15%] w-36 md:w-40 aspect-square bg-[#0A0A0A] border border-white/10 rounded-2xl shadow-xl floating-card z-0 transform -rotate-6 overflow-hidden cursor-pointer" onclick="openFolder('conecta')">
+                    <img src="assets/thumb/conecta_capa.jpg" alt="Conecta Cassino Cover" class="w-full h-full object-cover opacity-70 hover:scale-105 transition-all duration-500">
+                    <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-sm px-2 py-0.5 border border-white/10 rounded">
+                        <span class="text-[8px] font-mono uppercase text-white tracking-wider">Case 02</span>
+                    </div>
+                </div>
+                <!-- Card 3: Inferior Direito (Bruma Cover) -->
+                <div class="absolute bottom-[10%] right-[5%] md:right-[15%] w-40 md:w-48 aspect-square bg-[#0A0A0A] border border-white/10 rounded-2xl shadow-xl floating-card z-20 transform rotate-3 overflow-hidden cursor-pointer" onclick="openFolder('bruma')">
+                    <img src="assets/thumb/bruma_capa.jpg" alt="Canto da Bruma Cover" class="w-full h-full object-cover opacity-75 hover:scale-105 transition-all duration-500">
+                    <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-sm px-2 py-0.5 border border-white/10 rounded">
+                        <span class="text-[8px] font-mono uppercase text-white tracking-wider">Case 03</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes Estáticos / Logotipos -->
+    <section class="py-12 bg-[#0A0A0A] overflow-hidden border-y border-white/5 relative z-20">
+        <div class="max-w-7xl mx-auto flex flex-wrap gap-8 md:gap-16 items-center justify-center opacity-50 hover:opacity-100 transition duration-500 px-6 font-mono text-xs uppercase tracking-widest text-neutral-400 text-center">
+            <span>Conecta Cassino</span>
+            <div class="w-1.5 h-1.5 bg-[#0049b1] rounded-full"></div>
+            <span>Nilmar Eletrônicos</span>
+            <div class="w-1.5 h-1.5 bg-[#0049b1] rounded-full"></div>
+            <span>Documenta+</span>
+            <div class="w-1.5 h-1.5 bg-[#0049b1] rounded-full"></div>
+            <span>SC São Paulo</span>
+            <div class="w-1.5 h-1.5 bg-[#0049b1] rounded-full"></div>
+            <span>Café da Bruma</span>
+        </div>
+    </section>
+
+    <!-- Seção Sobre / Biografia -->
+    <section id="sobre" class="py-28 px-6 relative z-20 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1 animate-on-scroll" style="transition-delay: 200ms;">
+                <h2 class="text-[#0049b1] text-xs font-mono tracking-[0.3em] mb-4 uppercase">Biografia</h2>
+                <h3 class="text-3xl md:text-4xl font-normal text-white mb-6 uppercase tracking-tight leading-snug">
+                    A união entre <span class="text-[#0049b1] font-bold">TI e Audiovisual.</span>
+                </h3>
+                <p class="text-neutral-400 leading-relaxed mb-8 text-base md:text-lg font-light text-balance">
+                    Com 19 anos, uno a precisão técnica da minha formação em TI pelo IFRS com o feeling narrativo do Jornalismo. Minha entrega é completa: <strong>eu faço as captações e a edição final</strong>, garantindo excelência visual para marcas como Nilmar Eletrônicos, Conecta Cassino e Café da Bruma.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="border-l-2 border-[#0049b1] pl-4">
+                        <p class="font-medium uppercase text-sm text-white">Captação Profissional</p>
+                        <p class="text-xs text-neutral-500 font-mono uppercase mt-1">Equipamento & Olhar</p>
+                    </div>
+                    <div class="border-l-2 border-[#0049b1] pl-4">
+                        <p class="font-medium uppercase text-sm text-white">Edição Dinâmica</p>
+                        <p class="text-xs text-neutral-500 font-mono uppercase mt-1">Ritmo & Retenção</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card de Imagem Flutuante com Feixes Luminosos -->
+            <div class="order-1 md:order-2 relative group aspect-square max-w-md mx-auto w-full animate-on-scroll" style="transition-delay: 400ms;">
+                <!-- Brilho de fundo azul -->
+                <div class="absolute -inset-4 bg-[#0049b1]/15 rounded-2xl blur-3xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+                
+                <!-- Card flutuante 3D -->
+                <div class="relative w-full h-full bg-[#0A0A0A] border border-white/10 rounded-2xl overflow-hidden floating-card aspect-square shadow-2xl">
+                    <!-- Efeitos de Feixe Luminoso Ambient -->
+                    <div class="beam-border-h"></div>
+                    <div class="beam-border-v"></div>
+                    
+                    <img src="assets/img/EU _TRABALHANDO.jpeg" alt="Pedro Henrique em ação" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio / Projetos -->
+    <section id="portfolio" class="py-28 px-6 max-w-7xl mx-auto relative z-20">
+        <div class="mb-16 border-l-4 border-[#0056b3] pl-6 animate-on-scroll" style="transition-delay: 100ms;">
+            <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-white">Projetos & Clientes</h2>
+            <p class="text-neutral-500 font-mono text-xs uppercase tracking-widest mt-2">Clique para abrir a pasta de vídeos</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Nilmar Eletrônicos -->
+            <div class="portfolio-item group relative h-[500px] overflow-hidden rounded-[2rem] bg-[#0A0A0A] border border-white/10 cursor-pointer floating-card shadow-2xl animate-on-scroll" style="transition-delay: 200ms;" onclick="openFolder('nilmar')">
+                <div class="video-overlay absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/75 transition-all duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold uppercase tracking-tight text-white mb-3 text-center px-4">Nilmar Eletrônicos</h3>
+                    <span class="text-[#0056b3] text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5 border border-[#0056b3]/30 px-3 py-1 rounded-full group-hover:bg-[#0056b3] group-hover:text-white group-hover:border-[#0056b3] transition-all">
+                        Abrir Galeria 
+                        <svg aria-hidden="true" class="iconify" data-icon="solar:play-bold-duotone" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.21.72 4.255 1.94 5.92L3 21l3.08-.94C7.745 20.72 9.79 21 12 21c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 14H8v-2h4v2zm4-4H8v-2h8v2z" fill="currentColor"></path></svg>
+                    </span>
+                </div>
+                <img src="assets/thumb/nilmar_capa.jpg" class="w-full h-full object-cover opacity-45 group-hover:opacity-30 group-hover:scale-105 transition duration-700">
+            </div>
+
+            <!-- Conecta Cassino -->
+            <div class="portfolio-item group relative h-[500px] overflow-hidden rounded-[2rem] bg-[#0A0A0A] border border-white/10 cursor-pointer floating-card shadow-2xl animate-on-scroll" style="transition-delay: 300ms;" onclick="openFolder('conecta')">
+                <div class="video-overlay absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/75 transition-all duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold uppercase tracking-tight text-white mb-3 text-center px-4">Conecta Cassino</h3>
+                    <span class="text-[#0056b3] text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5 border border-[#0056b3]/30 px-3 py-1 rounded-full group-hover:bg-[#0056b3] group-hover:text-white group-hover:border-[#0056b3] transition-all">
+                        Abrir Galeria 
+                        <svg aria-hidden="true" class="iconify" data-icon="solar:play-bold-duotone" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.21.72 4.255 1.94 5.92L3 21l3.08-.94C7.745 20.72 9.79 21 12 21c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 14H8v-2h4v2zm4-4H8v-2h8v2z" fill="currentColor"></path></svg>
+                    </span>
+                </div>
+                <img src="assets/thumb/conecta_capa.jpg" class="w-full h-full object-cover opacity-45 group-hover:opacity-30 group-hover:scale-105 transition duration-700">
+            </div>
+
+            <!-- Canto da Bruma -->
+            <div class="portfolio-item group relative h-[500px] overflow-hidden rounded-[2rem] bg-[#0A0A0A] border border-white/10 cursor-pointer floating-card shadow-2xl animate-on-scroll" style="transition-delay: 400ms;" onclick="openFolder('bruma')">
+                <div class="video-overlay absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/75 transition-all duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold uppercase tracking-tight text-white mb-3 text-center px-4">Canto da Bruma</h3>
+                    <span class="text-[#0056b3] text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5 border border-[#0056b3]/30 px-3 py-1 rounded-full group-hover:bg-[#0056b3] group-hover:text-white group-hover:border-[#0056b3] transition-all">
+                        Abrir Galeria 
+                        <svg aria-hidden="true" class="iconify" data-icon="solar:play-bold-duotone" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.21.72 4.255 1.94 5.92L3 21l3.08-.94C7.745 20.72 9.79 21 12 21c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 14H8v-2h4v2zm4-4H8v-2h8v2z" fill="currentColor"></path></svg>
+                    </span>
+                </div>
+                <img src="assets/thumb/bruma_capa.jpg" class="w-full h-full object-cover opacity-45 group-hover:opacity-30 group-hover:scale-105 transition duration-700">
+            </div>
+
+            <!-- Documenta+ -->
+            <div class="portfolio-item group relative h-[500px] overflow-hidden rounded-[2rem] bg-[#0A0A0A] border border-white/10 cursor-pointer floating-card shadow-2xl animate-on-scroll" style="transition-delay: 500ms;" onclick="openFolder('documenta')">
+                <div class="video-overlay absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/75 transition-all duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold uppercase tracking-tight text-white mb-3 text-center px-4">Documenta+</h3>
+                    <span class="text-[#0056b3] text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5 border border-[#0056b3]/30 px-3 py-1 rounded-full group-hover:bg-[#0056b3] group-hover:text-white group-hover:border-[#0056b3] transition-all">
+                        Abrir Galeria 
+                        <svg aria-hidden="true" class="iconify" data-icon="solar:play-bold-duotone" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.21.72 4.255 1.94 5.92L3 21l3.08-.94C7.745 20.72 9.79 21 12 21c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 14H8v-2h4v2zm4-4H8v-2h8v2z" fill="currentColor"></path></svg>
+                    </span>
+                </div>
+                <img src="assets/thumb/documenta_capa.jpg" class="w-full h-full object-cover opacity-45 group-hover:opacity-30 group-hover:scale-105 transition duration-700">
+            </div>
+
+            <!-- S.C. São Paulo -->
+            <div class="portfolio-item group relative h-[500px] overflow-hidden rounded-[2rem] bg-[#0A0A0A] border border-white/10 cursor-pointer floating-card shadow-2xl animate-on-scroll" style="transition-delay: 600ms;" onclick="openFolder('scsp')">
+                <div class="video-overlay absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/75 transition-all duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold uppercase tracking-tight text-white mb-3 text-center px-4">S.C. São Paulo</h3>
+                    <span class="text-[#0056b3] text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5 border border-[#0056b3]/30 px-3 py-1 rounded-full group-hover:bg-[#0056b3] group-hover:text-white group-hover:border-[#0056b3] transition-all">
+                        Abrir Galeria 
+                        <svg aria-hidden="true" class="iconify" data-icon="solar:play-bold-duotone" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.21.72 4.255 1.94 5.92L3 21l3.08-.94C7.745 20.72 9.79 21 12 21c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 14H8v-2h4v2zm4-4H8v-2h8v2z" fill="currentColor"></path></svg>
+                    </span>
+                </div>
+                <img src="assets/thumb/scsp_capa.jpg" class="w-full h-full object-cover opacity-45 group-hover:opacity-30 group-hover:scale-105 transition duration-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal das Pastas / Clientes -->
+    <div id="folder-modal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/95 backdrop-blur-xl p-4 md:p-8 transition-all overflow-y-auto">
+        <div class="w-full max-w-6xl my-auto py-8">
+            <div class="flex justify-between items-center mb-12 border-b border-[#0056b3]/30 pb-6">
+                <div>
+                    <h2 id="modal-title" class="text-3xl md:text-5xl font-black uppercase tracking-tight text-[#0056b3]">Cliente</h2>
+                    <p class="text-neutral-500 font-mono text-[10px] uppercase tracking-widest mt-2 italic">Captação e Edição por Pedro Henrique</p>
+                </div>
+                <button onclick="closeFolder()" class="text-white text-5xl font-light hover:text-[#0056b3] transition-colors focus:outline-none">&times;</button>
+            </div>
+            
+            <div id="modal-content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-12">
+                <!-- Vídeos dinâmicos injetados por JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé & CTA Final -->
+    <footer id="contato" class="py-32 text-center bg-gradient-to-t from-[#0056b3]/15 to-transparent relative overflow-hidden border-t border-white/5">
+        <!-- Background Grid quadriculado -->
+        <div class="absolute inset-0 grid-bg pointer-events-none z-0"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-normal mb-12 uppercase tracking-tighter text-white leading-none animate-on-scroll" style="transition-delay: 100ms;">
+                VAMOS PROJETAR <br>O SEU <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0056b3] to-white font-black italic">PRÓXIMO HIT?</span>
+            </h2>
+            
+            <!-- Botão com Shimmer de Borda em Gradiente Cônico Giratório -->
+            <div class="flex justify-center animate-on-scroll" style="transition-delay: 200ms;">
+                <a class="group relative isolate inline-flex items-center justify-center gap-3 overflow-hidden rounded-none bg-transparent pt-4 pr-8 pb-4 pl-8 text-base font-bold text-white transition-all duration-300 hover:shadow-[0_0_40px_-5px_rgba(0,86,179,0.5)]" href="https://wa.me/53991291699" style="--spread: 90deg; --shimmer-color: #0056b3; --speed: 3s; --cut: 1px;">
+                    <!-- Rotating Border Gradient Beam -->
+                    <div class="absolute inset-0 -z-20 overflow-hidden">
+                        <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_3s_linear_infinite]" style="animation: spin 3s linear infinite;">
+                            <div class="absolute inset-0" style="background: conic-gradient(from calc(270deg - (var(--spread) * 0.5)), transparent 0, var(--shimmer-color) var(--spread), transparent var(--spread));"></div>
+                        </div>
+                    </div>
+                    <!-- Inner Background Cutout -->
+                    <div class="absolute inset-[1px] -z-10 bg-[#050505] transition-colors duration-300 group-hover:bg-[#0A0A0A]"></div>
+                    
+                    <!-- Content -->
+                    <svg aria-hidden="true" class="iconify text-xl text-[#0066FF]" data-icon="solar:chat-round-line-bold-duotone" height="1em" role="img" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.21.72 4.255 1.94 5.92L3 21l3.08-.94C7.745 20.72 9.79 21 12 21c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 14H8v-2h4v2zm4-4H8v-2h8v2z" fill="currentColor"></path></svg>
+                    ME CHAMA NO WHATSAPP
+                </a>
+            </div>
+            
+            <p class="mt-20 text-neutral-600 font-mono text-[10px] tracking-widest uppercase">© 2026 Pedro Henrique • Social Media & Filmmaker</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
