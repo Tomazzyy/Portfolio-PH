@@ -1,47 +1,27 @@
 // Dados dos Clientes (As "Pastas")
 const clientData = {
-    'bruma': {
-        title: 'Canto da Bruma',
-        videos: [
-            { src: 'assets/videos/bruma/1 ANO CANTO DA BRUMA.mp4', thumb: 'assets/thumb/bruma_1.jpg' },
-            { src: 'assets/videos/bruma/A cura está dentro de vocês! - corrigido.mp4', thumb: 'assets/thumb/bruma_2.jpg' }
-        ]
-    },
-    'conecta': {
-        title: 'Conecta Cassino',
-        videos: [
-            { src: 'assets/videos/conecta/3 coisas que a gente ama no Cassino.mp4', thumb: 'assets/thumb/conecta_1.jpg' },
-            { src: 'assets/videos/conecta/Conecta Carnaval.mp4', thumb: 'assets/thumb/conecta_2.jpg' },
-            { src: 'assets/videos/conecta/mito x verdade.mp4', thumb: 'assets/thumb/conecta_3.jpg' }
-        ]
-    },
-    'documenta': {
-        title: 'Documenta+',
-        videos: [
-            { src: 'assets/videos/documenta/4 dicas carnaval - d+.mp4', thumb: 'assets/thumb/doc_1.jpg' },
-            { src: 'assets/videos/documenta/Ar condicionado Documenta mais.mp4', thumb: 'assets/thumb/doc_2.jpg' },
-            { src: 'assets/videos/documenta/Carnaval - Documenta+.mp4', thumb: 'assets/thumb/doc_3.jpg' },
-            { src: 'assets/videos/documenta/D+ - Curriculo.mp4', thumb: 'assets/thumb/doc_4.jpg' }
-        ]
-    },
-    'nilmar': {
-        title: 'Nilmar Eletrônicos',
-        videos: [
-            { src: 'assets/videos/nilmar/Antes e Depois.mp4', thumb: 'assets/thumb/nilmar_1.jpg' },
-            { src: 'assets/videos/nilmar/Atendimento Rápido - Nilmar Eletrônicos.mp4', thumb: 'assets/thumb/nilmar_2.jpg' },
-            { src: 'assets/videos/nilmar/Carnaval - Nilmar Eletrônicos.mp4', thumb: 'assets/thumb/nilmar_3.jpg' },
-            { src: 'assets/videos/nilmar/Lara - A GENTE TEM.mp4', thumb: 'assets/thumb/nilmar_4.jpg' },
-            { src: 'assets/videos/nilmar/Lara - Capas e Películas.mp4', thumb: 'assets/thumb/nilmar_5.jpg' },
-            { src: 'assets/videos/nilmar/POV; BASTIDORES.mp4', thumb: 'assets/thumb/nilmar_6.jpg' }
-        ]
-    },
     'scsp': {
-        title: 'Sport Club São Paulo',
+        title: 'SC São Paulo',
         videos: [
-            { src: 'assets/videos/scsp/Churrascaria Leão - SEM V.O.mp4', thumb: 'assets/thumb/sc_1.jpg' },
-            { src: 'assets/videos/scsp/Reels - Anúncio Camisas - Oficial.mp4', thumb: 'assets/thumb/sc_2.jpg' },
-            { src: 'assets/videos/scsp/São Paulo - Vídeo Vertical - Ghostpost.mp4', thumb: 'assets/thumb/sc_3.jpg' },
-            { src: 'assets/videos/scsp/Vídeo YT São Paulo - mais um atualizado.mp4', thumb: 'assets/thumb/sc_4.jpg' }
+            { src: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544272/An%C3%BAncio_F%C3%A1bio_Recife_4_tiidjj.mp4', thumb: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544272/An%C3%BAncio_F%C3%A1bio_Recife_4_tiidjj.jpg' }
+        ]
+    },
+    'tilinho': {
+        title: 'Tilinho Lanches',
+        videos: [
+            { src: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Tilinho_Lanches_-_20_anos_o_sabor_da_nossa_hi_1_ommuqz.mp4', thumb: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Tilinho_Lanches_-_20_anos_o_sabor_da_nossa_hi_1_ommuqz.jpg' }
+        ]
+    },
+    'minuano': {
+        title: 'Minuano Fertilizantes',
+        videos: [
+            { src: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Minuano_Vacina%C3%A7%C3%A3o_Gripe_p2fgbu.mp4', thumb: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Minuano_Vacina%C3%A7%C3%A3o_Gripe_p2fgbu.jpg' }
+        ]
+    },
+    'tomaz': {
+        title: 'Tomaz Systems',
+        videos: [
+            { src: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544274/Criativos_-_Tomaz_System_sfm9no.mp4', thumb: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544274/Criativos_-_Tomaz_System_sfm9no.jpg' }
         ]
     }
 };
@@ -152,3 +132,32 @@ window.onclick = function(event) {
         });
     };
 })();
+
+
+// 5. Animação 3D da foto "Sobre mim" ao rolar a página
+document.addEventListener('DOMContentLoaded', () => {
+    const sobremim3D = document.getElementById('sobremim-3d');
+    if (!sobremim3D) return;
+
+    window.addEventListener('scroll', () => {
+        // Usa requestAnimationFrame internamente via navegador para performance, 
+        // mas vamos calcular diretamente
+        const rect = sobremim3D.parentElement.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Verifica se a seção está visível na tela
+        if (rect.top < windowHeight && rect.bottom > 0) {
+            // Calcula o progresso do scroll de -1 (topo da tela) a 1 (fim da tela)
+            // Quando rect.top == windowHeight/2, está no meio da tela (progress = 0)
+            const progress = (rect.top - (windowHeight / 2)) / (windowHeight / 2);
+            
+            // Aplica rotações baseadas no progresso
+            // Limita os ângulos para não ficar estranho
+            const rotateX = progress * 20; // 20 graus
+            const rotateY = progress * -15; 
+            const translateZ = Math.abs(progress) * 50; 
+            
+            sobremim3D.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(${translateZ}px)`;
+        }
+    }, { passive: true });
+});
