@@ -6,6 +6,24 @@ const clientData = {
             { src: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544272/An%C3%BAncio_F%C3%A1bio_Recife_4_tiidjj.mp4', thumb: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544272/An%C3%BAncio_F%C3%A1bio_Recife_4_tiidjj.jpg' }
         ]
     },
+    'grafica': {
+        title: 'Gráfica Imperial',
+        videos: [
+            { src: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779545171/Gr%C3%A1fica_Imperial_-_Elevar_o_N%C3%ADvel_delivery_wfoenr.mp4', thumb: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779545171/Gr%C3%A1fica_Imperial_-_Elevar_o_N%C3%ADvel_delivery_wfoenr.jpg' }
+        ]
+    },
+    'conecta': {
+        title: 'Conecta Cassino',
+        videos: [
+            { src: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Conecta_cassino_-_lara_prov_local_urj3xu.mp4', thumb: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Conecta_cassino_-_lara_prov_local_urj3xu.jpg' }
+        ]
+    },
+    'nilmar': {
+        title: 'Nilmar Eletrônicos',
+        videos: [
+            { src: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544274/V%C3%ADdeo_Inaugura%C3%A7%C3%A3o_-_Ajustado_yazlax.mp4', thumb: 'https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544274/V%C3%ADdeo_Inaugura%C3%A7%C3%A3o_-_Ajustado_yazlax.jpg' }
+        ]
+    },
     'tilinho': {
         title: 'Tilinho Lanches',
         videos: [
