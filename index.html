@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Henrique | Filmmaker & Social Media</title>
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Google Fonts Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Iconify Script -->
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    
+
     <script>
         document.documentElement.classList.add('js-active');
         tailwind.config = {
@@ -29,80 +31,133 @@
         }
     </script>
 </head>
-<body class="bg-[#050505] text-neutral-300 min-h-screen flex flex-col overflow-x-hidden selection:bg-[#0049b1] selection:text-white">
+
+<body
+    class="bg-[#050505] text-neutral-300 min-h-screen flex flex-col overflow-x-hidden selection:bg-[#0049b1] selection:text-white">
 
     <!-- Cursor Personalizado Azul -->
-    <div id="custom-cursor" class="hidden md:block fixed w-8 h-8 border-2 border-[#0049b1] rounded-full pointer-events-none z-[9999] transition-transform duration-100 ease-out"></div>
+    <div id="custom-cursor"
+        class="hidden md:block fixed w-8 h-8 border-2 border-[#0049b1] rounded-full pointer-events-none z-[9999] transition-transform duration-100 ease-out">
+    </div>
 
     <!-- Navegação Estilo Canvas -->
-    <nav class="fixed top-0 left-0 w-full z-[100] bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center">
+    <nav
+        class="fixed top-0 left-0 w-full z-[100] bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center">
         <div class="flex items-center gap-4">
             <img src="MINHA LOGO.png" alt="Pedro Henrique" class="h-14 md:h-20 w-auto">
-            <span class="hidden md:block text-xs font-mono font-semibold tracking-widest text-neutral-500">ESTRATEGISTA AUDIOVISUAL & FILMMAKER</span>
+            <span class="hidden md:block text-xs font-mono font-semibold tracking-widest text-neutral-500">ESTRATEGISTA
+                AUDIOVISUAL & FILMMAKER</span>
         </div>
-        <div class="hidden md:flex gap-6 text-[10px] lg:text-xs font-mono uppercase tracking-widest text-neutral-400 items-center">
+        <div
+            class="hidden md:flex gap-6 text-[10px] lg:text-xs font-mono uppercase tracking-widest text-neutral-400 items-center">
             <a href="#portfolio" class="hover:text-[#0049b1] transition-colors">Portfólio</a>
             <a href="#sobre" class="hover:text-[#0049b1] transition-colors">Sobre</a>
-            <a href="https://www.instagram.com/pedrohenrique.media/" target="_blank" class="hover:text-[#0049b1] transition-colors flex items-center gap-1.5 ml-2 border border-white/10 px-3 py-1.5 rounded hover:border-[#0049b1]/50 group">
-                <svg class="iconify text-[#0049b1] group-hover:scale-110 transition-transform" data-icon="mdi:instagram" height="1.2em" viewBox="0 0 24 24" width="1.2em"></svg>
+            <a href="https://www.instagram.com/pedrohenrique.media/" target="_blank"
+                class="hover:text-[#0049b1] transition-colors flex items-center gap-1.5 ml-2 border border-white/10 px-3 py-1.5 rounded hover:border-[#0049b1]/50 group">
+                <svg class="iconify text-[#0049b1] group-hover:scale-110 transition-transform" data-icon="mdi:instagram"
+                    height="1.2em" viewBox="0 0 24 24" width="1.2em"></svg>
                 Instagram
             </a>
         </div>
-        
+
         <!-- Botão Brutalista do Design System -->
-        <a class="btn-wrapper group relative inline-flex justify-center items-center p-3 border border-neutral-800 hover:border-[#0049b1] transition-colors duration-300" href="https://wa.me/53991291699">
-            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMCwgNzMsIDE3NywgMC4yKSIvPjwvc3ZnPg==')] transition-opacity duration-300"></div>
+        <a class="btn-wrapper group relative inline-flex justify-center items-center p-3 border border-neutral-800 hover:border-[#0049b1] transition-colors duration-300"
+            href="https://wa.me/53991291699">
+            <div
+                class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMCwgNzMsIDE3NywgMC4yKSIvPjwvc3ZnPg==')] transition-opacity duration-300">
+            </div>
             <!-- Corner accents -->
-            <div class="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0"></div>
-            <div class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0"></div>
-            <span class="btn flex items-center gap-2 bg-transparent text-white font-medium uppercase tracking-wider text-[10px] relative z-10">
+            <div
+                class="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0">
+            </div>
+            <span
+                class="btn flex items-center gap-2 bg-transparent text-white font-medium uppercase tracking-wider text-[10px] relative z-10">
                 Falar com Pedro
-                <svg aria-hidden="true" class="iconify text-sm" data-icon="solar:arrow-right-up-bold-duotone" height="1em" role="img" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M17.47 15.53a.75.75 0 0 0 1.28-.53V6a.75.75 0 0 0-.75-.75H9a.75.75 0 0 0-.53 1.28z" fill="currentColor" fill-rule="evenodd"></path><path d="M5.47 17.47a.75.75 0 1 0 1.06 1.06l6.97-6.97l-1.06-1.06z" fill="currentColor" opacity=".5"></path></svg>
+                <svg aria-hidden="true" class="iconify text-sm" data-icon="solar:arrow-right-up-bold-duotone"
+                    height="1em" role="img" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                        d="M17.47 15.53a.75.75 0 0 0 1.28-.53V6a.75.75 0 0 0-.75-.75H9a.75.75 0 0 0-.53 1.28z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                    <path d="M5.47 17.47a.75.75 0 1 0 1.06 1.06l6.97-6.97l-1.06-1.06z" fill="currentColor" opacity=".5">
+                    </path>
+                </svg>
             </span>
         </a>
     </nav>
 
     <!-- Hero Section Split 3D (Design System Clone adaptado) -->
-    <section class="min-h-screen flex items-center justify-center px-6 lg:px-16 relative pt-32 pb-16 overflow-hidden bg-[url('eu.png')] bg-fixed bg-[center_top_20%] bg-[length:80%] bg-no-repeat">
+    <section
+        class="min-h-screen flex items-center justify-center px-6 lg:px-16 relative pt-32 pb-16 overflow-hidden bg-[url('eu.png')] bg-fixed bg-[center_top_20%] bg-[length:80%] bg-no-repeat">
         <!-- Overlay escuro para garantir leitura do texto -->
         <div class="absolute inset-0 bg-black/70 pointer-events-none z-0"></div>
-        
+
         <!-- Background Grid quadriculado com Máscara Radial -->
         <div class="absolute inset-0 grid-bg pointer-events-none z-0"></div>
-        
+
         <!-- Luz de fundo difusa azul elétrico -->
-        <div class="absolute w-[500px] h-[500px] bg-[#0049b1]/10 rounded-full blur-3xl -z-10 top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+        <div
+            class="absolute w-[500px] h-[500px] bg-[#0049b1]/10 rounded-full blur-3xl -z-10 top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+        </div>
 
         <div class="relative z-10 max-w-4xl mx-auto w-full flex flex-col justify-center items-center text-center z-20">
-            <h2 class="text-[#0049b1] font-mono text-xs mb-5 tracking-[0.3em] uppercase" style="transition-delay: 100ms;">
+            <h2 class="text-[#0049b1] font-mono text-xs mb-5 tracking-[0.3em] uppercase"
+                style="transition-delay: 100ms;">
                 Captação & Edição Profissional
             </h2>
-            <h1 class="text-5xl md:text-7xl lg:text-[6rem] font-black mb-6 uppercase leading-[0.95] tracking-tighter text-white" style="transition-delay: 300ms;">
-                PARE E <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0049b1] to-white italic">ESCUTE.</span>
+            <h1 class="text-5xl md:text-7xl lg:text-[6rem] font-black mb-6 uppercase leading-[0.95] tracking-tighter text-white"
+                style="transition-delay: 300ms;">
+                PARE E <br><span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-[#0049b1] to-white italic">ESCUTE.</span>
             </h1>
-            <p class="max-w-2xl text-neutral-400 text-base md:text-lg mb-10 leading-relaxed font-light text-balance" style="transition-delay: 500ms;">
-                Transformo segundos de atenção em autoridade digital. Especialista em captação, edição dinâmica e <strong>gestão de mídias sociais</strong> para quem busca o próximo nível.
+            <p class="max-w-2xl text-neutral-400 text-base md:text-lg mb-10 leading-relaxed font-light text-balance"
+                style="transition-delay: 500ms;">
+                Transformo segundos de atenção em autoridade digital. Especialista em captação, edição dinâmica e
+                <strong>gestão de mídias sociais</strong> para quem busca o próximo nível.
             </p>
             <div class="flex flex-wrap justify-center gap-4 items-center" style="transition-delay: 700ms;">
                 <!-- CTA Primário: Brutalista Azul -->
-                <a class="btn-wrapper group relative inline-flex justify-center items-center p-4 border border-neutral-800 hover:border-[#0049b1] transition-colors duration-300" href="https://wa.me/53991291699">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMCwgNzMsIDE3NywgMC4yKSIvPjwvc3ZnPg==')] transition-opacity duration-300"></div>
-                    <div class="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0"></div>
-                    <div class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0"></div>
-                    <span class="btn flex items-center gap-3 bg-transparent text-white font-medium uppercase tracking-wider text-xs relative z-10">
+                <a class="btn-wrapper group relative inline-flex justify-center items-center p-4 border border-neutral-800 hover:border-[#0049b1] transition-colors duration-300"
+                    href="https://wa.me/53991291699">
+                    <div
+                        class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMCwgNzMsIDE3NywgMC4yKSIvPjwvc3ZnPg==')] transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0">
+                    </div>
+                    <div
+                        class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[#0049b1] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0">
+                    </div>
+                    <span
+                        class="btn flex items-center gap-3 bg-transparent text-white font-medium uppercase tracking-wider text-xs relative z-10">
                         Conversar no WhatsApp
-                        <svg aria-hidden="true" class="iconify text-base" data-icon="solar:arrow-right-up-bold-duotone" height="1em" role="img" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M17.47 15.53a.75.75 0 0 0 1.28-.53V6a.75.75 0 0 0-.75-.75H9a.75.75 0 0 0-.53 1.28z" fill="currentColor" fill-rule="evenodd"></path><path d="M5.47 17.47a.75.75 0 1 0 1.06 1.06l6.97-6.97l-1.06-1.06z" fill="currentColor" opacity=".5"></path></svg>
+                        <svg aria-hidden="true" class="iconify text-base" data-icon="solar:arrow-right-up-bold-duotone"
+                            height="1em" role="img" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                d="M17.47 15.53a.75.75 0 0 0 1.28-.53V6a.75.75 0 0 0-.75-.75H9a.75.75 0 0 0-.53 1.28z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                            <path d="M5.47 17.47a.75.75 0 1 0 1.06 1.06l6.97-6.97l-1.06-1.06z" fill="currentColor"
+                                opacity=".5"></path>
+                        </svg>
                     </span>
                 </a>
-                
+
                 <!-- CTA Secundário: Shimmer Sutil de Galeria -->
-                <a class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-none bg-transparent pt-3.5 pr-6 pb-3.5 pl-6 text-xs font-semibold text-white transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,73,177,0.4)] border border-white/5" href="#portfolio" style="--spread: 90deg; --shimmer-color: #0049b1; --speed: 4s; --cut: 1px;">
+                <a class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-none bg-transparent pt-3.5 pr-6 pb-3.5 pl-6 text-xs font-semibold text-white transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,73,177,0.4)] border border-white/5"
+                    href="#portfolio" style="--spread: 90deg; --shimmer-color: #0049b1; --speed: 4s; --cut: 1px;">
                     <div class="absolute inset-0 -z-20 overflow-hidden">
-                        <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_4s_linear_infinite]" style="animation: spin 4s linear infinite;">
-                            <div class="absolute inset-0" style="background: conic-gradient(from calc(270deg - (var(--spread) * 0.5)), transparent 0, var(--shimmer-color) var(--spread), transparent var(--spread));"></div>
+                        <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_4s_linear_infinite]"
+                            style="animation: spin 4s linear infinite;">
+                            <div class="absolute inset-0"
+                                style="background: conic-gradient(from calc(270deg - (var(--spread) * 0.5)), transparent 0, var(--shimmer-color) var(--spread), transparent var(--spread));">
+                            </div>
                         </div>
                     </div>
-                    <div class="absolute inset-[1px] -z-10 bg-[#050505] transition-colors duration-300 group-hover:bg-[#0A0A0A]"></div>
+                    <div
+                        class="absolute inset-[1px] -z-10 bg-[#050505] transition-colors duration-300 group-hover:bg-[#0A0A0A]">
+                    </div>
                     VER PORTFÓLIO
                 </a>
             </div>
@@ -115,10 +170,14 @@
             <div class="order-2 md:order-1" style="transition-delay: 100ms;">
                 <h2 class="text-[#0049b1] text-xs font-mono tracking-[0.3em] mb-4 uppercase">Sobre Mim</h2>
                 <h3 class="text-5xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter leading-none">
-                    Quem é <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0049b1] to-white italic">Pedro?</span>
+                    Quem é <br><span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-[#0049b1] to-white italic">Pedro?</span>
                 </h3>
                 <p class="text-neutral-400 leading-relaxed mb-8 text-base md:text-lg font-light text-balance">
-                    Com 19 anos, uno a precisão técnica da minha formação em TI pelo IFRS com o feeling narrativo do Jornalismo. Minha entrega é completa: <strong>eu faço as captações e a edição final</strong>. Além disso, como <strong>Social Media</strong>, eu crio a sua estratégia digital, analiso o seu público e construo um posicionamento forte que transforma seguidores em clientes.
+                    Com 19 anos, uno a precisão técnica da minha formação em TI pelo IFRS com o feeling narrativo do
+                    Jornalismo. Minha entrega é completa: <strong>eu faço as captações e a edição final</strong>. Além
+                    disso, como <strong>Social Media</strong>, eu crio a sua estratégia digital, analiso o seu público e
+                    construo um posicionamento forte que transforma seguidores em clientes.
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     <div class="border-l-2 border-[#0049b1] pl-4 hover:border-white transition-colors duration-300">
@@ -136,24 +195,31 @@
                 </div>
 
                 <div class="mt-10 animate-on-scroll" style="transition-delay: 300ms;">
-                    <a href="https://www.instagram.com/pedrohenrique.media/" target="_blank" class="inline-flex items-center gap-2 text-[#0049b1] hover:text-white transition-all text-sm font-mono tracking-widest uppercase group bg-[#0049b1]/10 px-4 py-2 rounded border border-[#0049b1]/30 hover:bg-[#0049b1]/30 shadow-[0_0_15px_rgba(0,73,177,0.2)]">
-                        <svg class="iconify text-xl group-hover:scale-110 transition-transform" data-icon="mdi:instagram" viewBox="0 0 24 24"></svg>
+                    <a href="https://www.instagram.com/pedrohenrique.media/" target="_blank"
+                        class="inline-flex items-center gap-2 text-[#0049b1] hover:text-white transition-all text-sm font-mono tracking-widest uppercase group bg-[#0049b1]/10 px-4 py-2 rounded border border-[#0049b1]/30 hover:bg-[#0049b1]/30 shadow-[0_0_15px_rgba(0,73,177,0.2)]">
+                        <svg class="iconify text-xl group-hover:scale-110 transition-transform"
+                            data-icon="mdi:instagram" viewBox="0 0 24 24"></svg>
                         @pedrohenrique.media
                     </a>
                 </div>
             </div>
-            
+
             <!-- Foto 3D Interativa no Scroll e Flutuando -->
-            <div class="order-1 md:order-2 relative w-full perspective-[2000px] flex justify-center items-center h-[450px] md:h-[550px]" style="transition-delay: 200ms;">
+            <div class="order-1 md:order-2 relative w-full perspective-[2000px] flex justify-center items-center h-[450px] md:h-[550px]"
+                style="transition-delay: 200ms;">
                 <!-- Efeito de Luz 3D de fundo intenso -->
-                <div class="absolute bg-[#0049b1]/30 rounded-full blur-[100px] w-80 h-80 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none"></div>
-                
+                <div
+                    class="absolute bg-[#0049b1]/30 rounded-full blur-[100px] w-80 h-80 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none">
+                </div>
+
                 <!-- Container Principal que recebe a rotação do Scroll -->
-                <div id="sobremim-3d" class="relative w-full max-w-sm h-full transform-style-3d transition-transform duration-100 ease-out flex justify-center items-center">
-                    
+                <div id="sobremim-3d"
+                    class="relative w-full max-w-sm h-full transform-style-3d transition-transform duration-100 ease-out flex justify-center items-center">
+
                     <!-- Imagem Limpa com animação de flutuar (CSS) -->
                     <div class="floating-image w-full h-full relative z-10" style="transform: translateZ(50px);">
-                        <img src="sobremim.png" alt="Pedro Henrique" class="w-full h-full object-contain filter drop-shadow-[0_20px_50px_rgba(0,73,177,0.4)]">
+                        <img src="sobremim.png" alt="Pedro Henrique"
+                            class="w-full h-full object-contain filter drop-shadow-[0_20px_50px_rgba(0,73,177,0.4)]">
                     </div>
 
                 </div>
@@ -161,9 +227,31 @@
         </div>
     </section>
 
-    <!-- Clientes Estáticos / Logotipos -->
-    <section class="py-12 bg-[#0A0A0A] border-y border-white/5 overflow-hidden relative z-20">
-        <div class="max-w-7xl mx-auto flex flex-wrap gap-8 md:gap-16 items-center justify-center opacity-40 hover:opacity-100 transition duration-500 px-6 font-mono text-[10px] uppercase tracking-widest text-neutral-500 text-center">
+    <!-- Marcas que Confiam / Logotipos -->
+    <section class="py-20 bg-[#0A0A0A] border-y border-white/5 overflow-hidden relative z-20">
+        <h2 class="text-center text-[#0049b1] text-[10px] md:text-xs font-mono tracking-[0.3em] uppercase mb-12">Marcas
+            que confiam no Pedro Henrique</h2>
+
+        <!-- Grid de Logos (Placeholders) -->
+        <div id="marcas-grid"
+            class="max-w-5xl mx-auto flex flex-wrap justify-center items-center gap-10 md:gap-16 px-6 mb-16 opacity-60 hover:opacity-100 transition-opacity duration-500">
+            <img src="assets/spsc.png" alt="SC São Paulo"
+                class="h-12 md:h-16 w-auto object-contain hover:scale-110 transition-transform duration-300 drop-shadow-md">
+            <img src="assets/tilinho.png" alt="Tilinho Lanches"
+                class="h-12 md:h-16 w-auto object-contain hover:scale-110 transition-transform duration-300 drop-shadow-md">
+            <img src="assets/GraficaImperial.png" alt="Gráfica Imperial"
+                class="h-12 md:h-16 w-auto object-contain hover:scale-110 transition-transform duration-300 drop-shadow-md">
+            <img src="assets/minuano.png" alt="Minuano Fertilizantes"
+                class="h-12 md:h-16 w-auto object-contain hover:scale-110 transition-transform duration-300 drop-shadow-md">
+            <img src="assets/nelsonpraiahotel.png" alt="Nelson Praia Hotel"
+                class="h-12 md:h-16 w-auto object-contain hover:scale-110 transition-transform duration-300 drop-shadow-md">
+            <img src="assets/cantodabruma.png" alt="Canto da Bruma"
+                class="h-12 md:h-16 w-auto object-contain hover:scale-110 transition-transform duration-300 drop-shadow-md">
+        </div>
+
+        <!-- Lista em texto secundária -->
+        <div
+            class="max-w-7xl mx-auto flex flex-wrap gap-6 md:gap-12 items-center justify-center opacity-30 hover:opacity-100 transition duration-500 px-6 font-mono text-[10px] uppercase tracking-widest text-neutral-500 text-center">
             <span>SC São Paulo</span>
             <div class="w-1 h-1 bg-[#0049b1] rounded-full"></div>
             <span>Gráfica Imperial</span>
@@ -183,114 +271,215 @@
     <!-- Seção Portfólio / Projetos (Galeria 3D) -->
     <section id="portfolio" class="py-28 px-6 w-full relative z-20 overflow-hidden">
         <div class="mb-16 text-center animate-on-scroll" style="transition-delay: 100ms;">
-            <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight text-white">Últimos <span class="text-[#0049b1]">Projetos</span></h2>
-            <p class="text-neutral-500 font-mono text-xs uppercase tracking-widest mt-2">Arraste para girar a galeria 3D</p>
+            <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight text-white">Últimos <span
+                    class="text-[#0049b1]">Projetos</span></h2>
+            <p class="text-neutral-500 font-mono text-xs uppercase tracking-widest mt-2">Arraste para girar a galeria 3D
+            </p>
         </div>
 
         <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Video Item 1 (DESTAQUE 1: SC SP) -->
-            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border-2 border-[#0049b1] shadow-[0_0_30px_rgba(0,73,177,0.4)] overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8 z-10" onclick="openFolder('scsp')">
-                <div class="absolute top-4 right-4 bg-[#0049b1] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full z-30 shadow-[0_0_15px_rgba(0,73,177,0.8)]">
+            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border-2 border-[#0049b1] shadow-[0_0_30px_rgba(0,73,177,0.4)] overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8 z-10"
+                onclick="openFolder('scsp')">
+                <div
+                    class="absolute top-4 right-4 bg-[#0049b1] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full z-30 shadow-[0_0_15px_rgba(0,73,177,0.8)]">
                     Em Destaque
                 </div>
-                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544272/An%C3%BAncio_F%C3%A1bio_Recife_4_tiidjj.jpg" alt="SC São Paulo" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none"></div>
-                <div class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay"></div>
-                <div class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
-                    <svg class="w-14 h-14 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544272/An%C3%BAncio_F%C3%A1bio_Recife_4_tiidjj.jpg"
+                    alt="SC São Paulo"
+                    class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none">
                 </div>
-                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">SC São Paulo</h3>
-                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative bg-black/50 px-2 py-1 rounded backdrop-blur">Assistir Vídeo</p>
+                <div
+                    class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
+                    <svg class="w-14 h-14 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">SC
+                    São Paulo</h3>
+                <p
+                    class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative bg-black/50 px-2 py-1 rounded backdrop-blur">
+                    Assistir Vídeo</p>
             </div>
 
             <!-- Video Item 2 (DESTAQUE 2: Gráfica Imperial) -->
-            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border-2 border-[#0049b1] shadow-[0_0_30px_rgba(0,73,177,0.4)] overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8 z-10" onclick="openFolder('grafica')">
-                <div class="absolute top-4 right-4 bg-[#0049b1] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full z-30 shadow-[0_0_15px_rgba(0,73,177,0.8)]">
+            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border-2 border-[#0049b1] shadow-[0_0_30px_rgba(0,73,177,0.4)] overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8 z-10"
+                onclick="openFolder('grafica')">
+                <div
+                    class="absolute top-4 right-4 bg-[#0049b1] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full z-30 shadow-[0_0_15px_rgba(0,73,177,0.8)]">
                     Em Destaque
                 </div>
-                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779545171/Gr%C3%A1fica_Imperial_-_Elevar_o_N%C3%ADvel_delivery_wfoenr.jpg" alt="Gráfica Imperial" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none"></div>
-                <div class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay"></div>
-                <div class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
-                    <svg class="w-14 h-14 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779545171/Gr%C3%A1fica_Imperial_-_Elevar_o_N%C3%ADvel_delivery_wfoenr.jpg"
+                    alt="Gráfica Imperial"
+                    class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none">
                 </div>
-                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">Gráfica Imperial</h3>
-                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative bg-black/50 px-2 py-1 rounded backdrop-blur">Assistir Vídeo</p>
+                <div
+                    class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
+                    <svg class="w-14 h-14 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">
+                    Gráfica Imperial</h3>
+                <p
+                    class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative bg-black/50 px-2 py-1 rounded backdrop-blur">
+                    Assistir Vídeo</p>
             </div>
-            
+
             <!-- Video Item 3 (Conecta Cassino) -->
-            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8" onclick="openFolder('conecta')">
-                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Conecta_cassino_-_lara_prov_local_urj3xu.jpg" alt="Conecta Cassino" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none"></div>
-                <div class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay"></div>
-                <div class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
-                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8"
+                onclick="openFolder('conecta')">
+                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Conecta_cassino_-_lara_prov_local_urj3xu.jpg"
+                    alt="Conecta Cassino"
+                    class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none">
                 </div>
-                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">Conecta Cassino</h3>
-                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">Assistir Vídeo</p>
+                <div
+                    class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
+                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">
+                    Conecta Cassino</h3>
+                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">
+                    Assistir Vídeo</p>
             </div>
 
             <!-- Video Item 4 (Nilmar Eletrônicos) -->
-            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8" onclick="openFolder('nilmar')">
-                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544274/V%C3%ADdeo_Inaugura%C3%A7%C3%A3o_-_Ajustado_yazlax.jpg" alt="Nilmar Eletrônicos" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none"></div>
-                <div class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay"></div>
-                <div class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
-                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8"
+                onclick="openFolder('nilmar')">
+                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544274/V%C3%ADdeo_Inaugura%C3%A7%C3%A3o_-_Ajustado_yazlax.jpg"
+                    alt="Nilmar Eletrônicos"
+                    class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none">
                 </div>
-                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">Nilmar Eletrônicos</h3>
-                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">Assistir Vídeo</p>
+                <div
+                    class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
+                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">
+                    Nilmar Eletrônicos</h3>
+                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">
+                    Assistir Vídeo</p>
             </div>
 
             <!-- Video Item 5 (Tilinho Lanches) -->
-            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8" onclick="openFolder('tilinho')">
-                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Tilinho_Lanches_-_20_anos_o_sabor_da_nossa_hi_1_ommuqz.jpg" alt="Tilinho Lanches" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none"></div>
-                <div class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay"></div>
-                <div class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
-                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8"
+                onclick="openFolder('tilinho')">
+                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Tilinho_Lanches_-_20_anos_o_sabor_da_nossa_hi_1_ommuqz.jpg"
+                    alt="Tilinho Lanches"
+                    class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none">
                 </div>
-                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">Tilinho Lanches</h3>
-                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">Assistir Vídeo</p>
+                <div
+                    class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
+                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">
+                    Tilinho Lanches</h3>
+                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">
+                    Assistir Vídeo</p>
             </div>
 
             <!-- Video Item 6 (Minuano Fertilizantes) -->
-            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8" onclick="openFolder('minuano')">
-                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Minuano_Vacina%C3%A7%C3%A3o_Gripe_p2fgbu.jpg" alt="Minuano Fertilizantes" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none"></div>
-                <div class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay"></div>
-                <div class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
-                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8"
+                onclick="openFolder('minuano')">
+                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544275/Minuano_Vacina%C3%A7%C3%A3o_Gripe_p2fgbu.jpg"
+                    alt="Minuano Fertilizantes"
+                    class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none">
                 </div>
-                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">Minuano Fertilizantes</h3>
-                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">Assistir Vídeo</p>
+                <div
+                    class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
+                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">
+                    Minuano Fertilizantes</h3>
+                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">
+                    Assistir Vídeo</p>
             </div>
 
             <!-- Video Item 7 (Tomaz Systems) -->
-            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8" onclick="openFolder('tomaz')">
-                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544274/Criativos_-_Tomaz_System_sfm9no.jpg" alt="Tomaz Systems" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none"></div>
-                <div class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay"></div>
-                <div class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
-                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <div class="portfolio-item relative aspect-[9/16] rounded-2xl bg-[#0A0A0A] border border-white/10 shadow-lg overflow-hidden flex flex-col justify-end items-center group cursor-pointer pb-8"
+                onclick="openFolder('tomaz')">
+                <img src="https://res.cloudinary.com/duh9xhjsh/video/upload/v1779544274/Criativos_-_Tomaz_System_sfm9no.jpg"
+                    alt="Tomaz Systems"
+                    class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent pointer-events-none">
                 </div>
-                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">Tomaz Systems</h3>
-                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">Assistir Vídeo</p>
+                <div
+                    class="absolute inset-0 bg-[#0049b1]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay">
+                </div>
+                <div
+                    class="text-white mb-2 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 z-20">
+                    <svg class="w-12 h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black uppercase tracking-tight text-white z-20 relative text-center px-4">Tomaz
+                    Systems</h3>
+                <p class="text-[#0049b1] font-mono text-[10px] font-bold uppercase tracking-widest mt-2 z-20 relative">
+                    Assistir Vídeo</p>
             </div>
         </div>
     </section>
 
     <!-- Modal das Pastas / Clientes -->
-    <div id="folder-modal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/95 backdrop-blur-xl p-4 md:p-8 transition-all overflow-y-auto">
+    <div id="folder-modal"
+        class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/95 backdrop-blur-xl p-4 md:p-8 transition-all overflow-y-auto">
         <div class="w-full max-w-6xl my-auto py-8">
             <div class="flex justify-between items-center mb-12 border-b border-[#0056b3]/30 pb-6">
                 <div>
-                    <h2 id="modal-title" class="text-3xl md:text-5xl font-black uppercase tracking-tight text-[#0056b3]">Cliente</h2>
-                    <p class="text-neutral-500 font-mono text-[10px] uppercase tracking-widest mt-2 italic">Captação e Edição por Pedro Henrique</p>
+                    <h2 id="modal-title"
+                        class="text-3xl md:text-5xl font-black uppercase tracking-tight text-[#0056b3]">Cliente</h2>
+                    <p class="text-neutral-500 font-mono text-[10px] uppercase tracking-widest mt-2 italic">Captação e
+                        Edição por Pedro Henrique</p>
                 </div>
-                <button onclick="closeFolder()" class="text-white text-5xl font-light hover:text-[#0056b3] transition-colors focus:outline-none">&times;</button>
+                <button onclick="closeFolder()"
+                    class="text-white text-5xl font-light hover:text-[#0056b3] transition-colors focus:outline-none">&times;</button>
             </div>
-            
+
             <div id="modal-content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-12">
                 <!-- Vídeos dinâmicos injetados por JS -->
             </div>
@@ -298,49 +487,79 @@
     </div>
 
     <!-- Rodapé & CTA Final -->
-    <footer id="contato" class="py-32 text-center bg-gradient-to-t from-[#0056b3]/15 to-transparent relative overflow-hidden border-t border-white/5">
+    <footer id="contato"
+        class="py-32 text-center bg-gradient-to-t from-[#0056b3]/15 to-transparent relative overflow-hidden border-t border-white/5">
         <!-- Background Grid quadriculado -->
         <div class="absolute inset-0 grid-bg pointer-events-none z-0"></div>
-        
+
         <div class="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center">
-            
+
             <!-- Logo no rodapé flutuante -->
-            <img src="MINHA LOGO.png" alt="Pedro Henrique" class="w-11/12 md:w-3/4 max-w-3xl h-auto mb-16 opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-700 drop-shadow-[0_0_25px_rgba(0,73,177,0.4)] floating-card">
-            
-            <h2 class="text-4xl md:text-6xl font-normal mb-12 uppercase tracking-tighter text-white leading-none animate-on-scroll text-center" style="transition-delay: 100ms;">
-                VAMOS PROJETAR <br>O SEU <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0056b3] to-white font-black italic">PRÓXIMO HIT?</span>
+            <img src="MINHA LOGO.png" alt="Pedro Henrique"
+                class="w-11/12 md:w-3/4 max-w-3xl h-auto mb-16 opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-700 drop-shadow-[0_0_25px_rgba(0,73,177,0.4)] floating-card">
+
+            <h2 class="text-4xl md:text-6xl font-normal mb-12 uppercase tracking-tighter text-white leading-none animate-on-scroll text-center"
+                style="transition-delay: 100ms;">
+                VAMOS PROJETAR <br>O SEU <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-[#0056b3] to-white font-black italic">PRÓXIMO
+                    HIT?</span>
             </h2>
-            
+
             <!-- Botões -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 animate-on-scroll w-full sm:w-auto" style="transition-delay: 200ms;">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 animate-on-scroll w-full sm:w-auto"
+                style="transition-delay: 200ms;">
                 <!-- Botão WhatsApp -->
-                <a class="group relative isolate inline-flex items-center justify-center gap-3 overflow-hidden rounded-none bg-transparent pt-4 pr-8 pb-4 pl-8 text-sm md:text-base font-bold text-white transition-all duration-300 hover:shadow-[0_0_40px_-5px_rgba(0,86,179,0.5)] w-full sm:w-auto" href="https://wa.me/53991291699" style="--spread: 90deg; --shimmer-color: #0056b3; --speed: 3s; --cut: 1px;">
+                <a class="group relative isolate inline-flex items-center justify-center gap-3 overflow-hidden rounded-none bg-transparent pt-4 pr-8 pb-4 pl-8 text-sm md:text-base font-bold text-white transition-all duration-300 hover:shadow-[0_0_40px_-5px_rgba(0,86,179,0.5)] w-full sm:w-auto"
+                    href="https://wa.me/53991291699"
+                    style="--spread: 90deg; --shimmer-color: #0056b3; --speed: 3s; --cut: 1px;">
                     <!-- Rotating Border Gradient Beam -->
                     <div class="absolute inset-0 -z-20 overflow-hidden">
-                        <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_3s_linear_infinite]" style="animation: spin 3s linear infinite;">
-                            <div class="absolute inset-0" style="background: conic-gradient(from calc(270deg - (var(--spread) * 0.5)), transparent 0, var(--shimmer-color) var(--spread), transparent var(--spread));"></div>
+                        <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_3s_linear_infinite]"
+                            style="animation: spin 3s linear infinite;">
+                            <div class="absolute inset-0"
+                                style="background: conic-gradient(from calc(270deg - (var(--spread) * 0.5)), transparent 0, var(--shimmer-color) var(--spread), transparent var(--spread));">
+                            </div>
                         </div>
                     </div>
                     <!-- Inner Background Cutout -->
-                    <div class="absolute inset-[1px] -z-10 bg-[#050505] transition-colors duration-300 group-hover:bg-[#0A0A0A]"></div>
-                    
+                    <div
+                        class="absolute inset-[1px] -z-10 bg-[#050505] transition-colors duration-300 group-hover:bg-[#0A0A0A]">
+                    </div>
+
                     <!-- Content -->
-                    <svg aria-hidden="true" class="iconify text-xl text-[#0066FF] group-hover:scale-110 transition-transform" data-icon="solar:chat-round-line-bold-duotone" height="1em" role="img" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.21.72 4.255 1.94 5.92L3 21l3.08-.94C7.745 20.72 9.79 21 12 21c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 14H8v-2h4v2zm4-4H8v-2h8v2z" fill="currentColor"></path></svg>
+                    <svg aria-hidden="true"
+                        class="iconify text-xl text-[#0066FF] group-hover:scale-110 transition-transform"
+                        data-icon="solar:chat-round-line-bold-duotone" height="1em" role="img" viewBox="0 0 24 24"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.477 2 2 6.477 2 12c0 2.21.72 4.255 1.94 5.92L3 21l3.08-.94C7.745 20.72 9.79 21 12 21c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 14H8v-2h4v2zm4-4H8v-2h8v2z"
+                            fill="currentColor"></path>
+                    </svg>
                     ME CHAMA NO WHATSAPP
                 </a>
 
                 <!-- Botão Instagram -->
-                <a class="group relative isolate inline-flex items-center justify-center gap-3 overflow-hidden rounded-none bg-transparent pt-4 pr-8 pb-4 pl-8 text-sm md:text-base font-bold text-white transition-all duration-300 hover:shadow-[0_0_40px_-5px_rgba(0,73,177,0.5)] border border-white/10 hover:border-[#0049b1] w-full sm:w-auto" href="https://www.instagram.com/pedrohenrique.media/" target="_blank">
-                    <div class="absolute inset-[1px] -z-10 bg-[#050505] transition-colors duration-300 group-hover:bg-[#0A0A0A]"></div>
-                    <svg class="iconify text-xl text-[#0049b1] group-hover:scale-110 transition-transform" data-icon="mdi:instagram" height="1em" viewBox="0 0 24 24" width="1em"></svg>
+                <a class="group relative isolate inline-flex items-center justify-center gap-3 overflow-hidden rounded-none bg-transparent pt-4 pr-8 pb-4 pl-8 text-sm md:text-base font-bold text-white transition-all duration-300 hover:shadow-[0_0_40px_-5px_rgba(0,73,177,0.5)] border border-white/10 hover:border-[#0049b1] w-full sm:w-auto"
+                    href="https://www.instagram.com/pedrohenrique.media/" target="_blank">
+                    <div
+                        class="absolute inset-[1px] -z-10 bg-[#050505] transition-colors duration-300 group-hover:bg-[#0A0A0A]">
+                    </div>
+                    <svg class="iconify text-xl text-[#0049b1] group-hover:scale-110 transition-transform"
+                        data-icon="mdi:instagram" height="1em" viewBox="0 0 24 24" width="1em"></svg>
                     MEU INSTAGRAM
                 </a>
             </div>
-            
-            <p class="mt-20 text-neutral-600 font-mono text-[10px] tracking-widest uppercase">© 2026 Pedro Henrique • Social Media & Filmmaker</p>
+
+            <div class="mt-20 flex flex-col items-center gap-3">
+                <p class="text-neutral-600 font-mono text-[10px] tracking-widest uppercase">© 2026 Pedro Henrique •
+                    Social Media & Filmmaker</p>
+                <p class="text-neutral-700 font-mono text-[8px] tracking-[0.2em] uppercase">Desenvolvido por <span
+                        class="text-[#0049b1] font-bold">Tomaz Systems</span></p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
